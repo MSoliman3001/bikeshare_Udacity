@@ -28,6 +28,7 @@ def input_Check (input_str,input_type):
     return input_read
 
 def get_filters():
+    print('Hello! Let\'s explore some US bikeshare data!')
     city = input_Check('choose requested city: chicago, new york city or washington?',1)
     month = input_Check('requested month? or pick "all"',2)
     day = input_Check('requested week day? or pick "all"',3)
