@@ -125,7 +125,7 @@ df display_data (df):
 	    while True:
     		print(df.iloc[start_loc:start_loc+5])
 		start_loc += 5
-    		view_display = input("Do you wish to continue with next 5 rows?: Enter yes or no.\n “).lower()
+    		view_display = input('Do you wish to continue with next 5 rows?: Enter yes or no.\n ').lower()
 		if view_display != "yes":
 			break
 	
