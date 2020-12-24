@@ -116,7 +116,7 @@ def user_stats(df,city):
     print('-'*40)
 
 	
-df display_data (df):
+def display_data (df):
     print('\nCalculating display data...\n')
     	start_time = time.time()
 	view_data = input('\nWould you like to view 5 rows of individual trip data? Enter yes or no\n').lower()
