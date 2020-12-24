@@ -32,6 +32,7 @@ def get_filters():
     city = input_Check('choose requested city: chicago, new york city or washington?',1)
     month = input_Check('requested month? or pick "all"',2)
     day = input_Check('requested week day? or pick "all"',3)
+	
     print('-'*40)
     return city, month, day
 
