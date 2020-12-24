@@ -8,7 +8,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 def input_Check (input_str,input_type):
     while True:
-        input_read = input(input_str).lower()
+        input_read = input(input_str.lower())
         try:
             if input_read in ['all','chicago','new york city','washington'] and input_type == 1:
                 break
@@ -118,14 +118,14 @@ def user_stats(df,city):
 df display_data (df):
     print('\nCalculating display data...\n')
     	start_time = time.time()
-	view_data = input('\nWould you like to view 5 rows of individual trip data? Enter yes or no\n')
+	view_data = input('\nWould you like to view 5 rows of individual trip data? Enter yes or no\n').lower()
 	if view_data == "yes":
 	    start_loc = 0
 	    while True:
     		print(df.iloc[start_loc:start_loc+5])
 		start_loc += 5
     		view_display = input("Do you wish to continue with next 5 rows?: Enter yes or no.\n “).lower()
-		if restart.lower() != "yes":
+		if view_display.lower() != "yes":
 			break
 	
 def main():
